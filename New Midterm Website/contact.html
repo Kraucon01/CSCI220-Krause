@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <head>
     <style>
         
         h1{
@@ -19,6 +20,17 @@
             color: crimson;    
         }
 
+        body{
+            width: 99%;
+            background: linear-gradient(45deg, black, white);
+        }
+
+        div{
+            border-style: solid;
+            border-color: red;
+            padding: 5px;
+        }
+
         img{
             border-radius: 50%;
             display:block;
@@ -31,13 +43,99 @@
             align-self: center;
         }
 
+        header{
+            background-color: black;
+        }
+
+        header::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        nav{
+            float: right;
+        }
+
+        nav ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 35px;
+        }
+
+        nav li{
+            display: inline-block;
+            margin-left: 70px;
+            margin-right: 348px;
+            padding-top: 20px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        nav a{
+            color: crimson;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        nav a :hover{
+            color: black;
+        }
+
+        nav a::before{
+            content: '';
+            display: block;
+            height: 5px;
+            width: 100%;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            width: 0%;
+            transition: all ease-in-out 250ms;
+        }
+
+        nav a:hover::before{
+            width: 100%;
+        }
+
+        img{ 
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 25%;
+            height: 25%;
+        }
+
     </style>
 
-    <body style="background-color: black;">
+    <title>Contact Page</title>
 
+    </head>
+    <body>
+        
+            <div class="NavBar">
+                <header>
+                    <!--This portion along with some of the styling code is for the Nav Bar-->
+                    <div class="Logo"><img src="WarhammerLogo.png" alt="Logo" title="Logo"></div>
+                    <nav>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="index.html">Home</a></li>
+                        </ul>
+                    </nav>
+    
+                </header>
+                </div>      
+        <div class="Form">
         <h1>Contact Creator</h1><br><br>
-
-        <img src="Contact Photo.jpg" alt="Contact" title="Contact" size="300">
+        <!--Able to Contact me to Add anything to the site they think needs-->
+        <img src="ContactPhoto.jpg" alt="Contact" title="Contact" size="300">
         <br><br>
         <form action="mailto:jennifer_scientist@mysciencefunding.org" method="POST" name="emailForm">
             <label for="contactName">Name:</label><br>
@@ -52,5 +150,6 @@
     
             <input type="submit" value="Submit">
         </form>
+        </div>
     </body>
 </html>

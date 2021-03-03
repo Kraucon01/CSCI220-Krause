@@ -5,103 +5,167 @@
 
         p{
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 30px;
+        font-size: 25px;
         text-align: left;
-        margin-left: 5%;
-        color: crimson;
-
+        margin-left: 15%;
+        color: black;
+        
         align-self: center;
         }
 
-        div{
-            white-space: normal;
-            
+        body{
+            width: 99%;
+            height: 99%;
+            background: no-repeat;
+            background: linear-gradient(45deg,rgb(3, 10, 107), rgb(0, 255, 234));
         }
 
         h1{
             text-align: center;
             font-size: 80px;
-            color: crimson;
+            color: black;
+        }
+
+        div{
+            border-style: solid;
+            border-color: red;
+            padding: 5px;
         }
 
         h2{
             text-align: center;
-            font-size: 30px;
-            color: crimson;
-        }
-
-        img{
-            display:block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 20%;
-        }
-
-        .FirstBackground{
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            background-image: url("WH40kFirstBackground.jpg");
-            background-position: center;
-            margin-bottom: -28px;
-            margin-right: -10px;
-            margin-left: -10px;
-        }
-
-        .FactionsOverview{
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            background-image: url("FactionalBackground.jpg");
-            background-position: center;
-            margin-bottom: -30px;
-            margin-right: -10px;
-            margin-left: -10px;
-
+            font-size: 50px;
+            color: black;
         }
 
         .ImperiumOfMankind{
-            background-size: 100% 500px;
-            background-repeat: no-repeat;
-            background-image: url("ImperiumOfManBackground.jpg");
-            background-position: center;
-            margin-top: -40px;
-            margin-right: -10px;
-            margin-left: -10px;
-            margin-bottom: -35px;
+            margin-top: -20px;
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
         }
+
         .Xeno{
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            background-image: url("Xeno'sBackground.jpg");
-            background-position: center;
-            margin-top: -35px;
-            margin-bottom: -35px;
-            margin-right: -10px;
-            margin-left: -10px;
+            margin-top: -20px;
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            
         }
+
+        .NavBar{
+            width: 90%;
+            margin: 0 auto;
+        }
+
         .Chaos{
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            background-image: url("ChaosBackground.jpg");
-            background-position: center;
-            margin-top: -35px;
-            margin-bottom: -20px;
-            margin-right: -10px;
-            margin-left: -10px;
+            margin-top: -20px;
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        header{
+            background-color: rgb(18, 112, 14);
+        }
+
+        header::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        nav{
+            float: right;
+            background-color: rgb(18, 112, 14);
+        }
+
+        nav ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 35px;
+        }
+
+        nav li{
+            display: inline-block;
+            margin-left: 70px;
+            margin-right: 300px;
+            padding-top: 20px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        nav a{
+            color: crimson;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        nav a :hover{
+            color: black;
+        }
+
+        nav a::before{
+            content: '';
+            display: block;
+            height: 5px;
+            width: 100%;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            width: 0%;
+            transition: all ease-in-out 250ms;
+        }
+
+        nav a:hover::before{
+            width: 100%;
+        }
+
+        img{ 
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            height: 50%;
+        }
+
+        .resources{
+            margin-left: 20%;
         }
 
     </style>
         <title>Warhammer Fansite Index Page</title>
 </head>
+    <!-- all images found in this and any portion of this site have been found on google-->
 
-    <body style="background-color: black;">
-        
-          <div class="FirstBackground">
+    <body>
+        <div class="NavBar">
+            <!--This portion along with some of the styling code is for the Nav Bar-->
+            <header>
+                <div class="Logo"><img src="WarhammerLogo.png" alt="Logo" title="Logo"></div>
+                <nav>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </nav>
+
+            </header>
+            </div>      
+        <div class="FirstBackground">
 
               <h1>Introducing Warhammer 40k</h1>
 
-              <img src="MyWarhammerLogo.jpg" alt="HandMadeLogo" title="WarhammerLogo">
-
+              <img src="MyWarhammerLogo.jpg" alt="HandMadeLogo" title="WarhammerLogo" width="20%" height="20%">
+              <lable for="Logo">My Hand Made Logo</lable>
               <h2>Info About the Hobby</h2>
+
               <br>
             <p>
                 It is the 41st Millennium. For more than a hundred centuries The Emperor has sat immobile on the Golden Throne of Earth.<br>
@@ -134,6 +198,9 @@
           </div>
 
           <div class="FactionsOverview">
+            <br>
+            <img src="FactionalBackground.jpg" alt="faction" title="faction">
+            <label for="Image">Found on Google</label>
             <h2>Factions Within The Setting</h2>
             <P>
                 Now there are a lot of different factions in this universe with their own complicated lore and stories you can explore.<br>
@@ -154,12 +221,14 @@
 <br>
           <div class="ImperiumOfMankind">
               <h2>The Imperium of Mankind</h2>
-              <P>
+              <img src="ImperiumofManBackground.jpg" alt="IOM" title="IOM">
+              <label for="Image">Found on Google</label>
+              <p text-align="center">
                   Our thoughts light the Darkness that others may cross space.<br>
                   We are one with Emperor our souls are joined at his will.<br>
                   Praise the Emperor whose sacrifice is life as our is death.<br>
-                  Hail his name the Master of Humanity.<br>
-                
+                  Hail his name the Master of Humanity.<br><br>
+              
                   The Imperium of Man is the galaxy spanning empire of mankind that has managed to sustain itself even after the fall of their<br>
                   now skeletal Emperor. They are considered one of the big bads in the universe do to the simple fact that man doesn't care for<br>
                   the lives of its people if they do not serve their Emperor. They are gothic by design and, quite frankly, possesses the most<br>
@@ -173,6 +242,16 @@
 <br>
           <div class="Xeno">
               <h2>The Xeno's from the Stars</h2>
+              <img src="XenoBackground.jpg" alt="xeno" title="xeno">
+              <label for="Image">Found on Google</label>
+              <p text-align="center">
+                Though Mankind is at the brink of this great apotheosis, you must be ever vigilant for the stillborn harbingers of this change.<br>
+                Where you seek the pure and strong, there too will you find the impure and weak. Where you find but one worthy of life, you will<br>
+                also find a million twisted, deformed monstrosities for whom death by your hand is a mercy. Therefore, look first for the mutant,<br>
+                for he may never hide his sin from you, and in his midst there will be revealed to you that which you seek. But be ever vigilant,<br>
+                for even should you find one with the gift, only one in a thousand psykers will be strong enough to resist the perils of <br>
+                the Empyrean and be allowed to live.
+              </p>
               <p>
                   The Xenos is the generic term given to just about all non-human races within the universe that range from mystical space elves<br>
                   all the way to giant planet eating bugs. Now, like the Imperium they have a quite a few sub factions under this general title<br>
@@ -190,7 +269,17 @@
 <br>
           <div class="Chaos">
                 <h2>The Daemons of Chaos</h2>
-                <br>
+                <img src="ChaosBackground.jpg" alt="chaos" title="chaos">
+                <label for="Image">Found on Google</label>
+                <p text-align="center">
+                    What the thick-headed fools with their broken corpse of an Emperor fail to understand is that not only can they never defeat us,<br>
+                    but they can not hide or flee or shield themselves from the triumph of Chaos. They are finite and we are unbound, undivided. They<br>
+                    must not err, or they fall to heresy. All who fall join our cause. Every Imperial fool who dares to open his eyes is a willing <br>
+                    recruit. They strive merely to hold back our fury and might, and it consumes them. Thus you can see Chaos is inevitable. We lurk <br>
+                    not only beyond their grasp and at their gates; we lurk within the darkness of their souls, on the tip of their tongues, in their<br>
+                    tortured dreams. We are them, but freed from the shackles of ignorance. We are them, grown strong… evolved. <br>
+                    We are them, but so much more!
+                </p>
                 <p>
                     This faction is all about the supernatural forces of the universe that stems from this place called "The Warp". Now this place<br>
                     is sort of like the inside of a black hole mixed with the collect thoughts, feelings, and emotions of all soul bearing species.<br>
@@ -211,17 +300,26 @@
 
           <div class="recources">
 
+            <h2>Links to Related Recources and Media</h2>
+            <br>
+                <p>
+                    These links will take you to some of the more well recieved and influential media that will give you a good idea about the game<br>
+                    and lore. While some of these sources won't agree with some or most people these are some of the better options to get into this<br>
+                    hobby. This is due to the diversity and digestable information intake of these sources and their formatting.<br><br>
 
+                    Now, if you did not like any of these please support them and if you don't then please message me a source you find that can be <br>
+                    added to the list. 
+                </p>
+
+                <ul>
+                    <li><a href="https://www.youtube.com/channel/UCJ4-WFTrDNWvcM7dEC6E2mw">Play on Tabletop</a></li>
+                    <li><a href="https://www.youtube.com/channel/UC-3TjY277uBsBl8VU8C4nqw">Tabletop Titans</a></li>
+                    <li><a href="https://www.youtube.com/user/alfabusa">Bruva Alfabusa: Text To Speech Device</a></li>
+                    <li><a href="https://www.youtube.com/channel/UC_wb8IVtmXwil8bN3IdVtZw">Majorkill</a></li>
+                    <li><a href="https://www.games-workshop.com/en-US/Home">Games Workshop Officail Site</a></li>
+                    <li><a href="https://www.forgeworld.co.uk/FW-Home?_requestid=1143410">GW Asscociate Forge World</a></li>
+                </ul>
 
           </div>
-
-<div class="w3-container"></div>
-        <!--Coded bars at the top to allow easy access to the other pages-->
-        <div class="w3-bar"
-            <div class="w3-bar-item"><a href="contact.html">Contact</a></div>
-            <div class="w3-bar-item"><a href="about.html">About</a></div>
-            <div class="w3-bar-item"><a href="events.html">Events</a></div>
-          </div>
-
     </body>
 </html>
