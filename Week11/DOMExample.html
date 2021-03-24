@@ -1,9 +1,34 @@
 <!DOCTYPE html>
 <title>Examples of DOM</title>
-<html>
+<html lang="em">
+    <meta charset="utf-8">
+    <style>
+        div{
+            width: 120;
+            height: 120;
+            float: left;
+            padding: 10px;
+            margin: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 10px;
+            background-color: dodgerblue;
+        }
+    </style>
     <body>
-        <form>
-            
+
+        <h1>DOM Example</h1>
+        <div id="form">
+        <form action="kraucon01@gmail.com" method="Post" name="test">
+
+            <label for="Contact">Email</label><br><br>
+            <input type="email" name="Contact" id="ContactName"><br><br>
+            <label for="TArea">Info of Message</label><br><br>
+            <textarea name="Message" rows="6" cols="10" id="messageInfo"></textarea><br><br>
+
+            <input type="submit" value="submit">
+
         </form>
+        </div>
+        <script src="DOMExample.js"></script>
     </body>
 </html>
