@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Week12Assignment</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="Week12Style.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <style>
+            html{
+                background: linear-gradient(45deg,violet, blue);
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <h1 id="Header" align="center">Make Your Appointment</h1>
+
+                <form onsubmit="return false">
+                    <div class="form-group">
+                    <label for="NameBox">Name:</label>
+                    <input type="text" class="form-control" name="Name" required="">
+                </div>
+                <div class="form-group">
+                    <label for="TitleBox">Title:</label>
+                    <input type="text" class="form-control" name="Title" required="">
+                </div>
+                <div class="for-group">
+                    <label for="DateBox">Date:</label>
+                    <input type="date" class="form-control" name="Date" required="">
+                </div><br>
+                <button type="submit" class="btn btn-success save-btn" onsubmit="return true">Add</button>
+                </form>
+                <br>
+        <div class="Table">
+            <table class="table table-bordered data-table">
+                <thead>
+                  <th>Name</th>
+                  <th>Title</th>
+                  <th>Date</th>
+                  <th width="200px">Action</th>
+                </thead>
+                <tbody>
+                
+                </tbody>
+              </table>
+    </div>
+        <script src="Week12JScript.js"></script>
+
+    </body>
+</html>
