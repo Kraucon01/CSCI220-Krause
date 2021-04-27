@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>FinalShoppingCart</title>
+    </head>
+    <body>
+        <header>
+            <div class="Overlay"></div>
+            <nav>
+                <h2>Index</h2>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li class="cart">
+                        <a href="Cart.html">
+                            <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        <div class="container">
+            <div class="item">
+                <img src="Images/ShureSM57.jpg"><br>
+                <p><a href="https://www.sweetwater.com/store/detail/SM57">SweetWater Store</a><br>
+                    Manufacturer: "Shure"<br>
+                    Product Name: "Sm57"<br>
+                    Item ID: "SM57"<br>
+                    Price: $99.00<br>
+                    Description: "Dynamic Microphone with Cardioid Pickup Pattern, 40Hz-15kHz Frequency Response, Low Impedance,Includes Stand Adapter, and Zippered Carrying Case"<br>
+                    Available: 9</p>
+                    <input type="number" id="quantity" name="quantity" min="1" max="5"><button type="button" class="add-cart cart1">Add</button>
+            </div><br><br>
+            <div class="item">
+                <img src="Images/Gibson.jpg"><br>
+                <p><a href="https://www.sweetwater.com/store/detail/SGS17HCCH/sn170099523">SweetWater Store</a><br>
+                   Manufacturer: "Gibson"<br>
+                   Product Name: "SG Standard 2017 T - Heritage Cherry"<br>
+                   Item ID: "SGS17HCCH"<br>
+                   Price: $1169.00<br>
+                   Serial: 170099523<br>
+                   Description: "Solidbody Electric Guitar with Mahogany Body, Mahogany Neck, Rosewood Fingerboard, and 2 Humbucking Pickups - Heritage Cherry"<br>
+                   Available: 1</p> 
+                   <input type="number" id="quantity" name="quantity" min="1" max="5"><button type="button" class="add-cart cart2">Add</button>
+            </div><br><br>
+            <div class="item">
+                <img src="Images/ShureSM58.jpg"><br>
+                <a href="https://www.sweetwater.com/store/detail/SM58">SweetWater Store</a><br>
+             <p>Manufacturer: "Shure"<br>
+                Product Name: "SM58"<br>
+                Item ID: "SM58"<br>
+                Price: $99.00<br>
+                Description: "Dynamic Vocal Microphone with Cardioid Pickup Pattern and 50Hz-15kHz Frequency Response, Includes Stand Adapter, and Zippered Carrying Case"<br>
+                Available: 6</p>
+                <input type="number" id="quantity" name="quantity" min="1" max="5"><button type="button" class="add-cart cart3">Add</button>
+            </div><br><br>
+            <div class="item">
+                <img src="Images/ZoomR16.jpg" width="250px" height="150px"><br>
+         <p><a href="https://www.sweetwater.com/store/detail/R16">SweetWater Store</a><br>
+            Manufacturer: "Zoom"<br>
+            Product Name: "R16"<br>
+            Item ID: "R16"<br>
+            Price: $399.99<Br>
+            Description: "16-track Portable SD Recorder, USB Audio Interface, and DAW Control Surface with 8 Microphone Inputs, Built-in Stereo Condenser Microphones, Built-in Effects, 1GB SD Card, and USB - Mac/PC",<br>
+            Available: 14</p>
+            <input type="number" id="quantity" name="quantity" min="1" max="5"><button type="button" class="add-cart cart4">Add</button>
+            </div>
+        </div>
+        
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        <script src="app.js"></script>
+        
+    </body>
+</html>
